@@ -1,0 +1,313 @@
+.fg-wrap {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+.fg-hero {
+  text-align: center;
+  padding: 26px 10px 14px;
+}
+
+.fg-title {
+  font-size: clamp(2.8rem, 15vw, 4.2rem);
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow:
+    3px 3px 0 var(--red-dark),
+    -2px -2px 0 var(--red-dark),
+    2px -2px 0 var(--red-dark),
+    -2px 2px 0 var(--red-dark),
+    0 8px 18px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+}
+
+.fg-tagline {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-top: 6px;
+}
+
+.fg-form {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 20px 18px 26px;
+  box-shadow: var(--shadow-hard);
+  border: 3px solid var(--dark);
+}
+
+.fg-section {
+  margin-bottom: 22px;
+}
+
+.fg-section:last-of-type {
+  margin-bottom: 12px;
+}
+
+.fg-section-title {
+  font-size: 1.15rem;
+  color: var(--red-dark);
+  margin-bottom: 10px;
+}
+
+.fg-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: var(--dark);
+}
+
+.fg-input,
+.fg-textarea {
+  width: 100%;
+  border: 2.5px solid var(--dark);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  margin-bottom: 14px;
+  background: #fff;
+  color: var(--dark);
+}
+
+.fg-input:focus,
+.fg-textarea:focus {
+  outline: 3px solid var(--gold);
+}
+
+.fg-textarea {
+  resize: vertical;
+  margin-bottom: 0;
+}
+
+.fg-btn-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fg-choice {
+  border: 2.5px solid var(--dark);
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 10px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+.fg-choice:active {
+  transform: scale(0.97);
+}
+
+.fg-choice-active {
+  background: var(--orange);
+  color: #fff;
+  box-shadow: var(--shadow-hard);
+}
+
+.fg-choice-price {
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.fg-sides {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fg-side {
+  border: 2.5px solid var(--dark);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--dark);
+}
+
+.fg-side-active {
+  background: var(--green);
+  color: #fff;
+}
+
+.fg-side-locked {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.fg-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 2.5px solid var(--dark);
+  border-radius: 14px;
+  padding: 6px 10px;
+}
+
+.fg-stepper-sm {
+  padding: 4px 8px;
+  gap: 10px;
+}
+
+.fg-stepper-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  background: var(--gold);
+  color: var(--dark);
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.fg-stepper-sm .fg-stepper-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+}
+
+.fg-stepper-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  min-width: 24px;
+  text-align: center;
+}
+
+.fg-addon-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1.5px dashed rgba(43, 18, 10, 0.25);
+}
+
+.fg-addon-row:last-child {
+  border-bottom: none;
+}
+
+.fg-addon-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.fg-addon-price {
+  display: block;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--orange-dark);
+}
+
+.fg-total-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 18px 0 14px;
+}
+
+.fg-total-amount {
+  font-size: 1.6rem;
+  color: var(--gold);
+  font-family: 'Anton', sans-serif;
+}
+
+.fg-error {
+  background: #ffd6d2;
+  border: 2px solid var(--red);
+  color: var(--red-dark);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.fg-btn {
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 16px;
+}
+
+.fg-btn-primary {
+  width: 100%;
+  background: var(--red);
+  color: #fff;
+  box-shadow: var(--shadow-hard);
+  letter-spacing: 0.5px;
+}
+
+.fg-btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--dark);
+}
+
+.fg-btn-primary:disabled {
+  opacity: 0.7;
+}
+
+.fg-submit {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.fg-confirm {
+  padding-top: 40px;
+}
+
+.fg-confirm-card {
+  background: var(--cream);
+  border: 3px solid var(--dark);
+  border-radius: var(--radius);
+  padding: 32px 22px;
+  text-align: center;
+  box-shadow: var(--shadow-hard);
+}
+
+.fg-confirm-emoji {
+  font-size: 3rem;
+}
+
+.fg-confirm-card h2 {
+  color: var(--red-dark);
+  font-size: 1.8rem;
+  margin: 10px 0 6px;
+}
+
+.fg-confirm-text {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 14px;
+}
+
+.fg-confirm-total {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.4rem;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.fg-confirm-pay {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--orange-dark);
+  margin-bottom: 22px;
+}

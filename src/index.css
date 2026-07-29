@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+  --red: #e0251b;
+  --red-dark: #a3160d;
+  --orange: #ff7a1a;
+  --orange-dark: #d95d00;
+  --gold: #ffb800;
+  --green: #3aa655;
+  --green-dark: #227a3a;
+  --cream: #fff4e0;
+  --dark: #2b120a;
+  --white: #ffffff;
+  --paid: #c8f5d1;
+  --radius: 18px;
+  --shadow-hard: 4px 4px 0 var(--dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, #ffce54 0%, transparent 40%),
+    radial-gradient(circle at 90% 5%, #ff9d3d 0%, transparent 45%),
+    linear-gradient(160deg, var(--red) 0%, var(--orange) 55%, var(--gold) 100%);
+  background-attachment: fixed;
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Anton', 'Arial Black', Impact, sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--dark);
+}

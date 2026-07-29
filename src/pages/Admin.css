@@ -1,0 +1,324 @@
+.ad-gate-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ad-gate-card {
+  background: var(--cream);
+  border: 3px solid var(--dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hard);
+  padding: 32px 26px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+}
+
+.ad-gate-title {
+  font-size: 2.4rem;
+  color: var(--red-dark);
+  margin-bottom: 4px;
+}
+
+.ad-gate-sub {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.ad-gate-input {
+  width: 100%;
+  border: 2.5px solid var(--dark);
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.ad-gate-error {
+  color: var(--red);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.ad-gate-btn {
+  width: 100%;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-hard);
+}
+
+.ad-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+
+.ad-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ad-title {
+  font-size: clamp(2.2rem, 8vw, 3rem);
+  color: #fff;
+  text-shadow: 3px 3px 0 var(--red-dark);
+}
+
+.ad-sub {
+  font-weight: 700;
+  color: var(--dark);
+  margin-top: 4px;
+}
+
+.ad-money-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.ad-money-card {
+  background: var(--cream);
+  border: 2.5px solid var(--dark);
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+}
+
+.ad-money-label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--orange-dark);
+}
+
+.ad-money-value {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.7rem;
+  color: var(--dark);
+  margin-top: 4px;
+}
+
+.ad-money-collected {
+  background: var(--paid);
+}
+
+.ad-money-owed {
+  background: #ffd6d2;
+}
+
+.ad-section-title {
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--dark);
+  margin-bottom: 12px;
+}
+
+.ad-tally {
+  margin-bottom: 26px;
+}
+
+.ad-tally-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.ad-tally-item {
+  background: var(--dark);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.ad-tally-value {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: var(--gold);
+}
+
+.ad-tally-label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.ad-orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.ad-orders-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ad-toggle-btn,
+.ad-archive-all-btn {
+  border: 2px solid var(--dark);
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.ad-archive-all-btn {
+  background: var(--gold);
+}
+
+.ad-empty {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.ad-order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ad-order-card {
+  background: var(--cream);
+  border: 2.5px solid var(--dark);
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.ad-order-paid {
+  background: var(--paid);
+}
+
+.ad-order-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ad-order-name {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.ad-order-phone {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--orange-dark);
+}
+
+.ad-order-time {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--dark);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.ad-order-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.ad-tag {
+  background: #fff;
+  border: 1.5px solid var(--dark);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.ad-order-sides,
+.ad-order-addons,
+.ad-order-instructions {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.ad-order-addons {
+  display: flex;
+  gap: 12px;
+  color: var(--green-dark);
+}
+
+.ad-order-instructions {
+  font-style: italic;
+  color: var(--red-dark);
+}
+
+.ad-order-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1.5px dashed rgba(43, 18, 10, 0.25);
+}
+
+.ad-order-total {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.4rem;
+  color: var(--red-dark);
+}
+
+.ad-order-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ad-paid-toggle {
+  border: 2px solid var(--dark);
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.ad-paid-on {
+  background: var(--green);
+  color: #fff;
+}
+
+.ad-status-select {
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: #fff;
+}
+
+.ad-archive-toggle {
+  border: 2px solid var(--dark);
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
