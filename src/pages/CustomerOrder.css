@@ -1,79 +1,81 @@
 .fg-wrap {
   max-width: 520px;
   margin: 0 auto;
-  padding: 0 16px 48px;
+  padding: 0 18px 56px;
 }
 
 .fg-hero {
   text-align: center;
-  padding: 26px 10px 14px;
+  padding: 40px 10px 24px;
 }
 
 .fg-title {
-  font-size: clamp(2.8rem, 15vw, 4.2rem);
-  color: #fff;
+  font-size: clamp(3rem, 16vw, 4.5rem);
+  color: var(--steel-blue);
   letter-spacing: 1px;
-  text-shadow:
-    3px 3px 0 var(--red-dark),
-    -2px -2px 0 var(--red-dark),
-    2px -2px 0 var(--red-dark),
-    -2px 2px 0 var(--red-dark),
-    0 8px 18px rgba(0, 0, 0, 0.35);
-  transform: rotate(-2deg);
+  text-shadow: 3px 3px 0 var(--dark);
 }
 
 .fg-tagline {
   color: var(--dark);
   font-weight: 700;
   font-size: 1.05rem;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .fg-form {
-  background: var(--cream);
+  background: var(--white);
   border-radius: var(--radius);
-  padding: 20px 18px 26px;
-  box-shadow: var(--shadow-hard);
-  border: 3px solid var(--dark);
+  padding: 28px 22px 30px;
+  border: 2px solid var(--steel-blue);
 }
 
 .fg-section {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .fg-section:last-of-type {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .fg-section-title {
-  font-size: 1.15rem;
-  color: var(--red-dark);
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  color: var(--steel-blue);
+  margin-bottom: 14px;
 }
 
 .fg-label {
   display: block;
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 6px;
-  color: var(--dark);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: var(--steel-blue);
 }
 
 .fg-input,
 .fg-textarea {
   width: 100%;
-  border: 2.5px solid var(--dark);
-  border-radius: 12px;
-  padding: 12px 14px;
+  border: 2px solid var(--dark);
+  border-radius: var(--radius);
+  padding: 14px 14px;
   font-size: 1rem;
-  margin-bottom: 14px;
-  background: #fff;
+  font-weight: 600;
+  margin-bottom: 18px;
+  background: var(--white);
   color: var(--dark);
 }
 
 .fg-input:focus,
 .fg-textarea:focus {
-  outline: 3px solid var(--gold);
+  outline: none;
+  border-color: var(--lip-red);
+  box-shadow: 0 0 0 3px rgba(232, 84, 110, 0.25);
 }
 
 .fg-textarea {
@@ -84,15 +86,17 @@
 .fg-btn-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 12px;
 }
 
 .fg-choice {
-  border: 2.5px solid var(--dark);
-  background: #fff;
-  border-radius: 14px;
-  padding: 14px 10px;
+  border: 2px solid var(--dark);
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px 10px;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
   font-size: 1rem;
   color: var(--dark);
   display: flex;
@@ -107,9 +111,10 @@
 }
 
 .fg-choice-active {
-  background: var(--orange);
-  color: #fff;
-  box-shadow: var(--shadow-hard);
+  background: var(--lip-red);
+  border-color: var(--lip-red);
+  color: var(--white);
+  box-shadow: 0 0 0 4px rgba(232, 84, 110, 0.3);
 }
 
 .fg-choice-price {
@@ -121,59 +126,61 @@
 .fg-sides {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .fg-side {
-  border: 2.5px solid var(--dark);
-  background: #fff;
-  border-radius: 12px;
-  padding: 12px 14px;
+  border: 2px solid var(--dark);
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 14px 16px;
   font-weight: 700;
   text-align: left;
   color: var(--dark);
 }
 
 .fg-side-active {
-  background: var(--green);
-  color: #fff;
+  background: var(--lip-red);
+  border-color: var(--lip-red);
+  color: var(--white);
+  box-shadow: 0 0 0 4px rgba(232, 84, 110, 0.3);
 }
 
 .fg-side-locked {
-  opacity: 0.75;
+  opacity: 0.7;
   cursor: default;
 }
 
 .fg-stepper {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  background: #fff;
-  border: 2.5px solid var(--dark);
-  border-radius: 14px;
+  gap: 16px;
+  background: var(--white);
+  border: 2px solid var(--dark);
+  border-radius: var(--radius);
   padding: 6px 10px;
 }
 
 .fg-stepper-sm {
   padding: 4px 8px;
-  gap: 10px;
+  gap: 12px;
 }
 
 .fg-stepper-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
   border: none;
-  background: var(--gold);
-  color: var(--dark);
+  background: var(--steel-blue);
+  color: var(--white);
   font-size: 1.4rem;
   font-weight: 800;
   line-height: 1;
 }
 
 .fg-stepper-sm .fg-stepper-btn {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   font-size: 1.2rem;
 }
 
@@ -189,8 +196,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1.5px dashed rgba(43, 18, 10, 0.25);
+  padding: 14px 0;
+  border-bottom: 1.5px solid #e8e8e8;
 }
 
 .fg-addon-row:last-child {
@@ -206,58 +213,59 @@
   display: block;
   font-weight: 600;
   font-size: 0.8rem;
-  color: var(--orange-dark);
+  color: var(--steel-blue-dark);
 }
 
 .fg-total-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--dark);
-  color: #fff;
-  border-radius: 14px;
-  padding: 14px 18px;
+  background: var(--white);
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  border-radius: var(--radius);
+  padding: 16px 20px;
   font-weight: 800;
-  font-size: 1.1rem;
-  margin: 18px 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1rem;
+  margin: 22px 0 16px;
 }
 
 .fg-total-amount {
-  font-size: 1.6rem;
-  color: var(--gold);
+  font-size: 1.9rem;
+  color: var(--lip-red);
   font-family: 'Anton', sans-serif;
 }
 
 .fg-error {
-  background: #ffd6d2;
-  border: 2px solid var(--red);
-  color: var(--red-dark);
-  border-radius: 12px;
-  padding: 10px 14px;
+  background: #fce9ec;
+  border: 2px solid var(--lip-red);
+  color: var(--lip-red);
+  border-radius: var(--radius);
+  padding: 12px 14px;
   font-weight: 700;
   font-size: 0.9rem;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .fg-btn {
   border: none;
-  border-radius: 14px;
+  border-radius: var(--radius);
   font-weight: 800;
   font-size: 1.1rem;
-  padding: 16px;
+  padding: 17px;
 }
 
 .fg-btn-primary {
   width: 100%;
-  background: var(--red);
-  color: #fff;
-  box-shadow: var(--shadow-hard);
+  background: var(--steel-blue);
+  color: var(--white);
   letter-spacing: 0.5px;
 }
 
 .fg-btn-primary:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--dark);
+  background: var(--steel-blue-dark);
 }
 
 .fg-btn-primary:disabled {
@@ -265,21 +273,20 @@
 }
 
 .fg-submit {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 
 .fg-confirm {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .fg-confirm-card {
-  background: var(--cream);
-  border: 3px solid var(--dark);
+  background: var(--white);
+  border: 2px solid var(--steel-blue);
   border-radius: var(--radius);
-  padding: 32px 22px;
+  padding: 36px 24px;
   text-align: center;
-  box-shadow: var(--shadow-hard);
 }
 
 .fg-confirm-emoji {
@@ -287,27 +294,27 @@
 }
 
 .fg-confirm-card h2 {
-  color: var(--red-dark);
-  font-size: 1.8rem;
-  margin: 10px 0 6px;
+  color: var(--steel-blue);
+  font-size: 1.9rem;
+  margin: 12px 0 8px;
 }
 
 .fg-confirm-text {
   font-weight: 700;
   font-size: 1.05rem;
-  margin: 0 0 14px;
+  margin: 0 0 16px;
 }
 
 .fg-confirm-total {
   font-family: 'Anton', sans-serif;
-  font-size: 2.4rem;
-  color: var(--green-dark);
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  color: var(--lip-red);
+  margin-bottom: 12px;
 }
 
 .fg-confirm-pay {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--orange-dark);
-  margin-bottom: 22px;
+  color: var(--steel-blue-dark);
+  margin-bottom: 26px;
 }
